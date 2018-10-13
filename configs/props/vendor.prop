@@ -177,6 +177,11 @@ vendor.display.override_doze_mode=1
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
 
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
 # Media Codecs
 debug.stagefright.omx_default_rank=0
 debug.stagefright.omx_default_rank.sw-audio=1
