@@ -171,6 +171,10 @@ vendor.display.use_smooth_motion=1
 vendor.display.defer_fps_frame_count=2
 vendor.display.override_doze_mode=1
 
+# HWUI
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
+
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
