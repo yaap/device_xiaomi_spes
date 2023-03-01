@@ -119,6 +119,9 @@ BOARD_KERNEL_CMDLINE += \
     swiotlb=2048 \
     kpti=off
 
+BOARD_KERNEL_CMDLINE +=  init.is_dt2w_sensor=1
+BOARD_KERNEL_CMDLINE +=  init.is_st2w_sensor=1
+
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := vendor/spes-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/spes
@@ -197,6 +200,13 @@ TARGET_SCREEN_DENSITY := 440
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2024-08-01
+
+# Sensors
+SOONG_CONFIG_NAMESPACES += XIAOMI_SENSORS
+SOONG_CONFIG_XIAOMI_SENSORS += DOUBLE_TAP_PATH
+SOONG_CONFIG_XIAOMI_SENSORS_DOUBLE_TAP_PATH := /sys/devices/platform/soc/4a88000.i2c/i2c-1/1-0038/double_tap_pressed
+SOONG_CONFIG_XIAOMI_SENSORS += SINGLE_TAP_PATH
+SOONG_CONFIG_XIAOMI_SENSORS_SINGLE_TAP_PATH := /sys/devices/platform/soc/4a88000.i2c/i2c-1/1-0038/single_tap_pressed
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
