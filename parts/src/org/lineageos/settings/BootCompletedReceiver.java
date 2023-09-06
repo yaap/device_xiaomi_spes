@@ -30,7 +30,9 @@ import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.Display;
+import android.view.Display.HdrCapabilities;
 
+import org.lineageos.settings.display.ColorModeService;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.thermal.ThermalTileService;
 import org.lineageos.settings.refreshrate.RefreshUtils;
@@ -50,6 +52,12 @@ public class BootCompletedReceiver extends BroadcastReceiver {
                 handleBootCompleted(context);
                 break;
         }
+        if (DEBUG)
+            Log.d(TAG, "Received boot completed intent");
+        // Display
+        context.startServiceAsUser(new Intent(context, ColorModeService.class),
+                UserHandle.CURRENT);        
+        RefreshUtils.startService(context);
     }
 
     private void handleLockedBootCompleted(Context context) {
