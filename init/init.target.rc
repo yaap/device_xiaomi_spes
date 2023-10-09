@@ -168,3 +168,10 @@ on property:ro.vendor.hw.ram=8GB
     setprop dalvik.vm.heaptargetutilization 0.46
     setprop dalvik.vm.heapminfree 8m
     setprop dalvik.vm.heapmaxfree 48m
+
+on property:graphics.display.kernel_idle_timer.enabled=true
+    # Switch display mode to 60hz when idle
+    write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/idle_mode "@60"
+on property:graphics.display.kernel_idle_timer.enabled=false
+    # Disable agressive idle mode switching
+    write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/idle_mode "none"
