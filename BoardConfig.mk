@@ -180,6 +180,11 @@ BOARD_USES_QCOM_HARDWARE := true
 BOARD_VENDOR := xiaomi
 TARGET_BOARD_PLATFORM := bengal
 
+# Disable sparse on all filesystem images
+TARGET_USERIMAGES_SPARSE_EROFS_DISABLED := true
+TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
+TARGET_USERIMAGES_SPARSE_F2FS_DISABLED := true
+
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/configs/props/odm.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/props/product.prop
