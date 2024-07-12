@@ -74,6 +74,11 @@ TARGET_USES_ION := true
 # FM
 BOARD_HAVE_QCOM_FM := true
 
+# Global LTO
+TARGET_GLOBAL_LTO := thin
+TARGET_GLOBAL_OPTIMIZATION := O3
+TARGET_GLOBAL_THINLTO := true
+
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml \
