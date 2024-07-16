@@ -1,0 +1,2 @@
+type settingslib_prop, property_type;
+type vendor_prop, property_type, file_type;
