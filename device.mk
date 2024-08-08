@@ -386,6 +386,7 @@ PRODUCT_PACKAGES += \
     SpesCarrierConfigOverlay \
     SpesDialerOverlay \
     SpesFrameworksOverlay \
+    SpesLauncher3Overlay \
     SpesSettingsOverlay \
     SpesSettingsProviderOverlay \
     SpesSystemUIOverlay \
