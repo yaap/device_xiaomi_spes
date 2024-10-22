@@ -91,12 +91,13 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             echo 'gettid: 1' >> ${2}
             ;; 
+        vendor/lib64/libwvhidl.so)
+            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "libcrypto-v34.so" "${2}"
+            "${PATCHELF}" --set-soname "libcrypto-v34.so" "${2}"
+            ;;
         *)
             return 1
             ;;
-        vendor/lib64/libwvhidl.so)
-	    "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
-	    ;;
     esac
 
     return 0
