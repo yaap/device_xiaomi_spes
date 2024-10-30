@@ -28,7 +28,6 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 # Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=spes_global \
-    PRIVATE_BUILD_DESC="spes_global-user 13 TKQ1.221114.001 V816.0.8.0.TGCMIXM:user release-keys"
-
-BUILD_FINGERPRINT := "Redmi/spes_global/spes:13/TKQ1.221114.001/V816.0.8.0.TGCMIXM:user/release-keys"
+    DeviceName=spes \
+    BuildDesc="spes_global-user 13 TKQ1.221114.001 V816.0.8.0.TGCMIXM:user release-keys" \
+    BuildFingerprint=Redmi/spes_global/spes:13/TKQ1.221114.001/V816.0.8.0.TGCMIXM:user/release-keys
