@@ -30,20 +30,30 @@ bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=false
 
-# Low memory killer daemon
+# LMKD
+ro.lmk.log_stats=false
+ro.config.low_ram=false
+ro.config.per_app_memcg=false
+ro.lmk.use_psi=true
+ro.lmk.use_minfree_levels=false
+ro.lmk.low=1001
+ro.lmk.medium=800
+ro.lmk.critical=100
 ro.lmk.critical_upgrade=false
+ro.lmk.upgrade_pressure=100
 ro.lmk.downgrade_pressure=100
 ro.lmk.kill_heaviest_task=false
 ro.lmk.kill_timeout_ms=0
-ro.lmk.stall_limit_critical=40
-ro.lmk.upgrade_pressure=100
-ro.lmk.use_minfree_levels=false
-ro.Imk.psi_partial_stall_ms=70
-ro.Imk.psi_complete_stall_ms=700
-ro.Imk.thrashing_limit=100
-ro.Imk.thrashing_limit_decay=10
-ro.Imk.swap_util_max=100
-ro.Imk.swap_free_low_percentage=20
+ro.lmk.debug=false
+ro.lmk.use_new_strategy=true
+ro.lmk.psi_partial_stall_ms=100
+ro.lmk.psi_complete_stall_ms=500
+ro.lmk.thrashing_limit=90
+ro.lmk.thrashing_limit_decay=10
+ro.lmk.swap_util_max=90
+ro.lmk.swap_free_low_percentage=10
+ro.lmk.filecache_min_kb=0
+ro.lmk.stall_limit_critical=10
 
 # Display
 debug.sf.disable_backpressure=1
