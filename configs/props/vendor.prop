@@ -111,9 +111,6 @@ drm.service.enabled=true
 # FS-verity
 ro.apk_verity.mode=2
 
-# FRP
-ro.frp.pst=/dev/block/bootdevice/by-name/frp
-
 # Graphics
 debug.sf.disable_backpressure=1
 debug.sf.enable_transaction_tracing=false
