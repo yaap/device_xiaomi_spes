@@ -487,6 +487,8 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
   android.hardware.thermal-service.qti
 
+$(call soong_config_set,qti_thermal,netlink,false)
+
 # Thermal configs
 PRODUCT_COPY_FILES += \
   $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/thermal/,$(TARGET_COPY_OUT_VENDOR)/etc)
