@@ -26,6 +26,9 @@ ro.charger.enable_suspend=1
 # CNE
 persist.vendor.cne.feature=1
 
+# Disable default frame rate limit for games
+debug.graphics.game_default_frame_rate.disabled=1
+
 # Display
 debug.force_no_blanking=true
 debug.sf.enable_hwc_vds=1
