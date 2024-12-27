@@ -62,6 +62,10 @@ TARGET_NO_BOOTLOADER := true
 # Configs File System
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
+# Disable sparse on all filesystem images
+TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
+TARGET_USERIMAGES_SPARSE_F2FS_DISABLED := true
+
 # Display
 TARGET_USES_COLOR_METADATA := true
 TARGET_USES_DISPLAY_RENDER_INTENTS := true
