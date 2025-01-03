@@ -291,6 +291,22 @@ PRODUCT_PACKAGES += \
     libipanat \
     liboffloadhal
 
+# Init
+PRODUCT_PACKAGES += \
+    init.mdm.sh \
+    init.qcom.sh
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    fstab.qcom_ramdisk \
+    fstab.zram \
+    init.qcom.power.rc \
+    init.qcom.rc \
+    init.recovery.qcom.rc \
+    init.stnfc.rc \
+    init.target.rc \
+    init.xiaomi.rc \
+    ueventd.qcom.rc
+
 # Inherit several Android Go Configurations(Beneficial for everyone, even on non-Go devices)
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
@@ -442,22 +458,6 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-3.9.1-vendorcompat \
     librmnetctl \
     libxml2
-
-# Rootdir
-PRODUCT_PACKAGES += \
-    init.mdm.sh \
-    init.qcom.sh
-
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    fstab.qcom_ramdisk \
-    fstab.zram \
-    init.qcom.power.rc \
-    init.qcom.rc \
-    init.recovery.qcom.rc \
-    init.stnfc.rc \
-    init.target.rc \
-    ueventd.qcom.rc
 
 # Sensors
 PRODUCT_PACKAGES += \
