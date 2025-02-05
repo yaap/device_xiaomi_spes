@@ -33,3 +33,7 @@ type sysfs_therm, fs_type, sysfs_type;
 type vendor_sysfs_displayfeature, fs_type, sysfs_type;
 
 type xiaomi_display, domain;
+
+type vendor_hal_displayfeature_xiaomi_service;
+
+type vendor_hal_displayfeature_xiaomi_default;

@@ -206,7 +206,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor \
     vendor.qti.hardware.display.mapperextensions@1.1.vendor \
-    vendor.qti.hardware.memtrack-service
+    vendor.qti.hardware.memtrack-service \
+    vendor.xiaomi.hardware.displayfeature@1.0.vendor
 
 PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
