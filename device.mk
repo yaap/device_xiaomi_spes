@@ -301,7 +301,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    fstab.qcom_ramdisk \
+    fstab.qcom.ramdisk \
     fstab.zram \
     init.qcom.power.rc \
     init.qcom.rc \
