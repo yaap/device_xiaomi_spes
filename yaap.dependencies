@@ -15,6 +15,11 @@
     "branch": "fifteen"
   },
   {
+    "repository"  : "vendor_xiaomi_spes-miuicamera",
+    "target_path" : "vendor/xiaomi/spes-miuicamera",
+    "branch": "fifteen"
+  },
+  {
     "repository": "packages_apps_DisplayFeatures",
     "target_path": "packages/apps/DisplayFeatures"
   }
