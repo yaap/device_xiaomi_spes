@@ -33,6 +33,14 @@
 	        <instance>legacy/0</instance>
 	    </interface>
 	</hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.power</name>
+        <version>4</version>
+        <interface>
+            <name>IPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.radio.config</name>
         <version>1.0-5</version>
@@ -123,6 +131,14 @@
         <version>2</version>
         <interface>
             <name>IVibrator</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.light</name>
+        <version>2</version>
+        <interface>
+            <name>ILights</name>
             <instance>default</instance>
         </interface>
     </hal>
