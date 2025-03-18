@@ -30,7 +30,6 @@ function vendor_imports() {
           "device/xiaomi/spes",
           "hardware/google/interfaces",
           "hardware/google/pixel",
-          "hardware/lineage/interfaces/power-libperfmgr",
           "hardware/qcom-caf/bootctrl",
           "hardware/qcom-caf/common/libqti-perfd-client",
           "hardware/qcom-caf/sm8250",
